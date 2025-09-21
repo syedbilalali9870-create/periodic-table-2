@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Colorful Periodic Table</title>
+  <link rel="stylesheet" href="assignment.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+    
+  <div class="wrap">
+    <h1>Colorful Periodic Table</h1>
+    <div class="legend">
+      <div class="item"><span class="sw alkali" style="width:16px;height:16px;border-radius:3px"></span> Alkali metal</div>
+      <div class="item"><span class="sw alkaline" style="width:16px;height:16px;border-radius:3px"></span> Alkaline earth</div>
+      <div class="item"><span class="sw transition" style="width:16px;height:16px;border-radius:3px"></span> Transition metal</div>
+      <div class="item"><span class="sw post" style="width:16px;height:16px;border-radius:3px"></span> Post-transition</div>
+      <div class="item"><span class="sw metalloid" style="width:16px;height:16px;border-radius:3px"></span> Metalloid</div>
+      <div class="item"><span class="sw nonmetal" style="width:16px;height:16px;border-radius:3px"></span> Nonmetal</div>
+      <div class="item"><span class="sw halogen" style="width:16px;height:16px;border-radius:3px"></span> Halogen</div>
+      <div class="item"><span class="sw noble" style="width:16px;height:16px;border-radius:3px"></span> Noble gas</div>
+    </div>
+
+    <div class="periodic-grid" id="periodic">
+      <!-- Row 1 -->
+      <div class="element nonmetal" style="grid-column:1;grid-row:1"><div class="num">1</div><div class="sym">H</div><div class="name">Hydrogen</div></div>
+      <div class="empty" style="grid-column:2 / span 15;grid-row:1"></div>
+      <div class="element noble" style="grid-column:18;grid-row:1"><div class="num">2</div><div class="sym">He</div><div class="name">Helium</div></div>
+
+      <!-- Row 2 -->
+      <div class="element alkali" style="grid-column:1;grid-row:2"><div class="num">3</div><div class="sym">Li</div><div class="name">Lithium</div></div>
+      <div class="element alkaline" style="grid-column:2;grid-row:2"><div class="num">4</div><div class="sym">Be</div><div class="name">Beryllium</div></div>
+      <div class="empty" style="grid-column:3 / span 9;grid-row:2"></div>
+      <div class="element metalloid" style="grid-column:13;grid-row:2"><div class="num">5</div><div class="sym">B</div><div class="name">Boron</div></div>
+      <div class="element nonmetal" style="grid-column:14;grid-row:2"><div class="num">6</div><div class="sym">C</div><div class="name">Carbon</div></div>
+      <div class="element nonmetal" style="grid-column:15;grid-row:2"><div class="num">7</div><div class="sym">N</div><div class="name">Nitrogen</div></div>
+      <div class="element nonmetal" style="grid-column:16;grid-row:2"><div class="num">8</div><div class="sym">O</div><div class="name">Oxygen</div></div>
+      <div class="element halogen" style="grid-column:17;grid-row:2"><div class="num">9</div><div class="sym">F</div><div class="name">Fluorine</div></div>
+      <div class="element noble" style="grid-column:18;grid-row:2"><div class="num">10</div><div class="sym">Ne</div><div class="name">Neon</div></div>
+
+      <!-- Row 3 -->
+      <div class="element alkali" style="grid-column:1;grid-row:3"><div class="num">11</div><div class="sym">Na</div><div class="name">Sodium</div></div>
+      <div class="element alkaline" style="grid-column:2;grid-row:3"><div class="num">12</div><div class="sym">Mg</div><div class="name">Magnesium</div></div>
+      <div class="empty" style="grid-column:3 / span 9;grid-row:3"></div>
+      <div class="element post" style="grid-column:13;grid-row:3"><div class="num">13</div><div class="sym">Al</div><div class="name">Aluminium</div></div>
+      <div class="element metalloid" style="grid-column:14;grid-row:3"><div class="num">14</div><div class="sym">Si</div><div class="name">Silicon</div></div>
+      <div class="element nonmetal" style="grid-column:15;grid-row:3"><div class="num">15</div><div class="sym">P</div><div class="name">Phosphorus</div></div>
+      <div class="element nonmetal" style="grid-column:16;grid-row:3"><div class="num">16</div><div class="sym">S</div><div class="name">Sulfur</div></div>
+      <div class="element halogen" style="grid-column:17;grid-row:3"><div class="num">17</div><div class="sym">Cl</div><div class="name">Chlorine</div></div>
+      <div class="element noble" style="grid-column:18;grid-row:3"><div class="num">18</div><div class="sym">Ar</div><div class="name">Argon</div></div>
+
+      <!-- Row 4 -->
+      <div class="element alkali" style="grid-column:1;grid-row:4"><div class="num">19</div><div class="sym">K</div><div class="name">Potassium</div></div>
+      <div class="element alkaline" style="grid-column:2;grid-row:4"><div class="num">20</div><div class="sym">Ca</div><div class="name">Calcium</div></div>
+      <div class="element transition" style="grid-column:3;grid-row:4"><div class="num">21</div><div class="sym">Sc</div><div class="name">Scandium</div></div>
+      <div class="element transition" style="grid-column:4;grid-row:4"><div class="num">22</div><div class="sym">Ti</div><div class="name">Titanium</div></div>
+      <div class="element transition" style="grid-column:5;grid-row:4"><div class="num">23</div><div class="sym">V</div><div class="name">Vanadium</div></div>
+      <div class="element transition" style="grid-column:6;grid-row:4"><div class="num">24</div><div class="sym">Cr</div><div class="name">Chromium</div></div>
+      <div class="element transition" style="grid-column:7;grid-row:4"><div class="num">25</div><div class="sym">Mn</div><div class="name">Manganese</div></div>
+      <div class="element transition" style="grid-column:8;grid-row:4"><div class="num">26</div><div class="sym">Fe</div><div class="name">Iron</div></div>
+      <div class="element transition" style="grid-column:9;grid-row:4"><div class="num">27</div><div class="sym">Co</div><div class="name">Cobalt</div></div>
+      <div class="element transition" style="grid-column:10;grid-row:4"><div class="num">28</div><div class="sym">Ni</div><div class="name">Nickel</div></div>
+      <div class="element transition" style="grid-column:11;grid-row:4"><div class="num">29</div><div class="sym">Cu</div><div class="name">Copper</div></div>
+      <div class="element transition" style="grid-column:12;grid-row:4"><div class="num">30</div><div class="sym">Zn</div><div class="name">Zinc</div></div>
+      <div class="element post" style="grid-column:13;grid-row:4"><div class="num">31</div><div class="sym">Ga</div><div class="name">Gallium</div></div>
+      <div class="element metalloid" style="grid-column:14;grid-row:4"><div class="num">32</div><div class="sym">Ge</div><div class="name">Germanium</div></div>
+      <div class="element metalloid" style="grid-column:15;grid-row:4"><div class="num">33</div><div class="sym">As</div><div class="name">Arsenic</div></div>
+      <div class="element nonmetal" style="grid-column:16;grid-row:4"><div class="num">34</div><div class="sym">Se</div><div class="name">Selenium</div></div>
+      <div class="element halogen" style="grid-column:17;grid-row:4"><div class="num">35</div><div class="sym">Br</div><div class="name">Bromine</div></div>
+      <div class="element noble" style="grid-column:18;grid-row:4"><div class="num">36</div><div class="sym">Kr</div><div class="name">Krypton</div></div>
+
+      <!-- Note: This demo shows elements 1–36. The rest (periods 6–7, f-block) can be added similarly. -->
+
+    </div>
+
+    
+
+  </div>
+</body>
+</html>
